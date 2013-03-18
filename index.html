@@ -7,68 +7,7 @@
         <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="http://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Marcellus" rel="stylesheet" type="text/css">
-        <style type="text/css">
-        body {
-            padding-top: 40px;
-            /*padding-bottom: 40px;*/
-            background-color: #1b1b1b;
-            font-size: 1.05em;
-            color: #eaeaea;
-            font-family: "Marcellus";
-            line-height: 1.5em;
-        }
-
-        a {
-            color: #ee5f5b;
-        }
-
-        .hero-unit {
-            text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
-            -moz-border-radius: 0px;
-            -webkit-border-radius: 0px;
-            border-radius: 0px;
-            padding: 80px;
-        }
-
-        .navbar, .hero-unit, h1, h2, h3 {
-            font-family: "Marcellus SC";
-        }
-
-        .hero-unit h1 {
-            font-size: 80px;
-        }
-
-        .hero-unit {
-            color: #eaeaea;
-            background: #210000; /* Old browsers */
-            background: -moz-linear-gradient(45deg,  #210000 24%, #7c0204 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left bottom, right top, color-stop(24%,#210000), color-stop(100%,#7c0204)); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(45deg,  #210000 24%,#7c0204 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(45deg,  #210000 24%,#7c0204 100%); /* Opera 11.10+ */
-            background: -ms-linear-gradient(45deg,  #210000 24%,#7c0204 100%); /* IE10+ */
-            background: linear-gradient(45deg,  #210000 24%,#7c0204 100%); /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#210000', endColorstr='#7c0204',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-        }
-
-        .row {
-            margin-bottom: 30px;
-        }
-
-        .btn-large {
-            font-size: 1.5em;
-        }
-
-        .second {
-            padding-top: 30px;
-            background-color: #2b2b2b;
-        }
-
-        footer {
-            text-align: center;
-            padding-top: 30px;
-            font-size: 14px;
-        }
-        </style>
+        <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -76,8 +15,8 @@
                 <div class="container">
                     <ul class="nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Play</a></li>
-                        <li><a href="#">Help</a></li>
+                        <li><a href="webapp/index.html">Play</a></li>
+                        <li><a href="help.html">Help</a></li>
                     </ul>
                 </div>
             </div>
@@ -93,15 +32,17 @@
             </div>
         </header>
 
-        <section class="container">
-            <div class="row">
-                <div class="span6">
-                    <h2>What is DIM?</h2>
-                    <p>Descent Into Madness is a audio adventure game involving exploration, puzzle-solving, and, occassionally, fast reflexes. Why did you awaken strapped to an operating table? Who is the doctor in the laboratory recording? And exactly what are those strange sounds you hear coming from the basement?
-                </div>
-                <div class="span6">
-                    <h2>Can I play?</h2>
-                    <p>If you can use the four arrow keys, read or listen to English, tolerate B-movie horror, and see a <em>Play Now</em> button above, you can play this game. <a href="#">Check out the help section</a> if you need assistance getting started.</p>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="span6">
+                        <h2>What is DIM?</h2>
+                        <p>Descent Into Madness is a audio adventure game involving exploration, puzzle-solving, and, occassionally, fast reflexes. Why did you awaken strapped to an operating table? Who is the doctor in the laboratory recording? And exactly what are those strange sounds you hear coming from the basement?
+                    </div>
+                    <div class="span6">
+                        <h2>Can I play?</h2>
+                        <p>If you can use the four arrow keys, read or listen to English, tolerate B-movie horror, and see a <em>Play Now</em> button above, you can play this game. <a href="#">Check out the help section</a> if you need assistance getting started.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -113,12 +54,12 @@
                         <h2>Who built this?</h2>
                         <p>In 2005, two then-UNC undergraduates, Eden Kung and Matt Clark, created <a href="http://www.cs.unc.edu/Research/assist/et/2005/SoundsLikeFun.html">the original DIM game</a> on Windows. It became a cult classic of sorts among kids at the NC Governor Morehead School.</p>
 
-                        <p>In 2012, I set out to bring DIM to the web with two goals. First, I wanted to revitalize this entertaining audio game for a new generation of kids to enjoy. And second, I wanted to build a "choose your own adventure" game engine for future endeavors.</p>
+                        <p>In 2012, I set out to bring DIM to the web with two goals. First, I wanted to revitalize this entertaining audio game for a new generation of kids to enjoy. And second, I wanted to build a "choose your own adventure" <a href="https://dim-boilerplate.readthedocs.org/en/latest/">game engine for future endeavors</a>.</p>
                     </div>
 
                     <div class="span6">
                         <h2>What about ...</h2>
-                        <p>Found a bug? Have a suggestion? Got a knack for voice acting, creating sound effects, drawing scene stills, or composing music? Want to donate your time as a developer? Wonderful! Get in touch by <a href="mailto:parente@cs.unc.edu">email</a>, <a href="http://twitter.com/parente">Twitter</a>, or <a href="https://profiles.google.com/parente">Google Plus</a>.</p>
+                        <p>Found a bug? Have a suggestion? Got a game idea? Want to donate time as a developer, composer, or artist? Wonderful! <a href="mailto:parente@cs.unc.edu">Get in touch</a> and let's work together.</p>
                     </div>
                 </div>
             </div>
@@ -132,10 +73,6 @@
                 <li><a href="https://dim-boilerplate.readthedocs.org/en/latest/">Developer Resources</a></li>
                 <li>&#183;</li>
                 <li><a href="mailto:parente@cs.unc.edu">Email</a></li>
-                <li>&#183;</li>
-                <li><a href="http://twitter.com/parente">Twitter</a></li>
-                <li>&#183;</li>
-                <li><a href="https://profiles.google.com/parente">Google Plus</a></li>
             </ul>
         </footer>
 

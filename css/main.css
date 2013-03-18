@@ -1,0 +1,62 @@
+body {
+    padding-top: 40px;
+    background-color: #1b1b1b;
+    font-size: 1.05em;
+    color: #eaeaea;
+    font-family: "Marcellus";
+    line-height: 1.5em;
+}
+
+a {
+    color: #ee5f5b;
+}
+
+.hero-unit {
+    text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    padding: 80px;
+    margin-bottom: 0px;
+}
+
+.navbar, .hero-unit, h1, h2, h3 {
+    font-family: "Marcellus SC";
+}
+
+.hero-unit h1 {
+    font-size: 80px;
+}
+
+.hero-unit {
+    color: #eaeaea;
+    background: #210000; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #210000 24%, #7c0204 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(24%,#210000), color-stop(100%,#7c0204)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #210000 24%,#7c0204 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #210000 24%,#7c0204 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #210000 24%,#7c0204 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #210000 24%,#7c0204 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#210000', endColorstr='#7c0204',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.btn-large {
+    font-size: 1.5em;
+}
+
+section {
+    padding: 30px 0px;
+    border-top: #252525;
+    border-bottom: #252525;
+}
+
+.second {
+    background-color: #2b2b2b;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 14px;
+    /*background-color: #2b2b2b;*/
+}
