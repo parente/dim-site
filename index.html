@@ -15,6 +15,7 @@
             font-size: 1.05em;
             color: #eaeaea;
             font-family: "Marcellus";
+            line-height: 1.5em;
         }
 
         a {
@@ -26,10 +27,15 @@
             -moz-border-radius: 0px;
             -webkit-border-radius: 0px;
             border-radius: 0px;
+            padding: 80px;
         }
 
         .navbar, .hero-unit, h1, h2, h3 {
             font-family: "Marcellus SC";
+        }
+
+        .hero-unit h1 {
+            font-size: 80px;
         }
 
         .hero-unit {
@@ -49,12 +55,18 @@
         }
 
         .btn-large {
-            font-size: 1.25em;
+            font-size: 1.5em;
+        }
+
+        .second {
+            padding-top: 30px;
+            background-color: #2b2b2b;
         }
 
         footer {
+            text-align: center;
             padding-top: 30px;
-            background-color: #2b2b2b;
+            font-size: 14px;
         }
         </style>
     </head>
@@ -65,7 +77,6 @@
                     <ul class="nav">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">Play</a></li>
-                        <li><a href="#">Create</a></li>
                         <li><a href="#">Help</a></li>
                     </ul>
                 </div>
@@ -82,52 +93,65 @@
             </div>
         </header>
 
-        <div class="container">
+        <section class="container">
             <div class="row">
                 <div class="span6">
                     <h2>What is DIM?</h2>
-                    <p>Descent Into Madness is a audio adventure game involving exploration, puzzle-solving, and, occassionally, fast reflexes. Why did you awaken strapped to an operating table? Who is the doctor speaking in the laboratory recording you just found? And exactly what are those strange sounds you hear coming from the basement?
+                    <p>Descent Into Madness is a audio adventure game involving exploration, puzzle-solving, and, occassionally, fast reflexes. Why did you awaken strapped to an operating table? Who is the doctor in the laboratory recording? And exactly what are those strange sounds you hear coming from the basement?
                 </div>
                 <div class="span6">
                     <h2>Can I play?</h2>
-                    <p>If you can use the four arrow keys, read or listen to English, and tolerate B-movie horror, you can play this game. If you're using a recent version of Safari or Chrome, your browser will even permit it. Jump in and play if you're ready, or <a href="#">check out the help</a> if you're scared ... er, not.</p>
+                    <p>If you can use the four arrow keys, read or listen to English, tolerate B-movie horror, and see a <em>Play Now</em> button above, you can play this game. <a href="#">Check out the help section</a> if you need assistance getting started.</p>
                 </div>
             </div>
+        </section>
 
-            <div class="row">
-                <div class="span6">
-                    <h2>Help, I'm stuck!</h2>
-                    <p>If you get stuck, have a look at the <a href="#">help section</a>. It explains the basic controls and even offers some tips for the more challenging parts of the game. If all else fails, contact me.</p>
-                </div>
-                <div class="span6">
-                    <h2>What about ...</h2>
-                    <p>Have a suggestion about how to improve the game? Thought of an idea for a new game? Got a knack for voice acting, creating sound effects, drawing scene stills, or composing music? Want to donate your time as a developer? Wonderful! See how you can get involved in <a href="#">creating game content</a> today.</p>
-                </div>
-            </div>
-        </div>
-
-        <footer>
+        <section class="second">
             <div class="container">
                 <div class="row">
                     <div class="span6">
                         <h2>Who built this?</h2>
-                        <p>In 2005, two then-UNC undergraduates, Eden Kung and Matt Clark, created the original DIM game on Windows XP. It became a cult classic of sorts among kids at the NC Governor Morehead School.</p>
+                        <p>In 2005, two then-UNC undergraduates, Eden Kung and Matt Clark, created <a href="http://www.cs.unc.edu/Research/assist/et/2005/SoundsLikeFun.html">the original DIM game</a> on Windows. It became a cult classic of sorts among kids at the NC Governor Morehead School.</p>
 
-                        <p>In 2012, I set out to bring DIM to the web with two goals. First, I wanted to reinvigorate this entertaining audio game for a new generation of kids to enjoy. And second, I wanted to build a "choose your own adventure" game engine for future endeavors.</p>
+                        <p>In 2012, I set out to bring DIM to the web with two goals. First, I wanted to revitalize this entertaining audio game for a new generation of kids to enjoy. And second, I wanted to build a "choose your own adventure" game engine for future endeavors.</p>
                     </div>
 
                     <div class="span6">
-                        <h2>For More Info</h2>
-                        <ul>
-                            <li>Contact parente@cs.unc.edu</li>
-                        </ul>
+                        <h2>What about ...</h2>
+                        <p>Found a bug? Have a suggestion? Got a knack for voice acting, creating sound effects, drawing scene stills, or composing music? Want to donate your time as a developer? Wonderful! Get in touch by <a href="mailto:parente@cs.unc.edu">email</a>, <a href="http://twitter.com/parente">Twitter</a>, or <a href="https://profiles.google.com/parente">Google Plus</a>.</p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
 
+        <footer>
+            <p>Code and media under <a href="https://github.com/parente/dim-game/blob/master/LICENSE">various licenses</a>, this site under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.<p>
+            <ul class="inline">
+                <li><a href="https://github.com/parente/dim-game">GitHub Project</a></li>
+                <li>&#183;</li>
+                <li><a href="https://dim-boilerplate.readthedocs.org/en/latest/">Developer Resources</a></li>
+                <li>&#183;</li>
+                <li><a href="mailto:parente@cs.unc.edu">Email</a></li>
+                <li>&#183;</li>
+                <li><a href="http://twitter.com/parente">Twitter</a></li>
+                <li>&#183;</li>
+                <li><a href="https://profiles.google.com/parente">Google Plus</a></li>
+            </ul>
+        </footer>
 
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39356424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
     </body>
 </html>
