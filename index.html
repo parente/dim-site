@@ -16,7 +16,7 @@
                     <p class="pull-right navbar-text">Descent Into Madness</p>
                     <ul class="nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="webapp/">Play</a></li>
+                        <li id="play-nav" style="display: none;"><a href="webapp/">Play</a></li>
                         <li><a href="help.html">Help</a></li>
                     </ul>
                 </div>
@@ -28,7 +28,7 @@
                 <h1 class="text-center">Descent Into Madness</h1>
                 <p class="text-center lead">An audio horror adventure game, reborn on the web</p>
                 <div class="controls text-center">
-                    <a class="btn btn-danger btn-large" href="webapp/">Play Now</a>
+                    <a id="play-button" style="display: none;" class="btn btn-danger btn-large" href="webapp/">Play Now</a>
                 </div>
             </div>
         </header>
@@ -79,7 +79,7 @@
 
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-
+        <script src="lib/main.js"></script>
         <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-39356424-1']);
