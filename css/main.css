@@ -1,10 +1,17 @@
 body {
     padding-top: 40px;
-    background-color: #1b1b1b;
     font-size: 1.05em;
     color: #eaeaea;
     font-family: "Marcellus";
     line-height: 1.5em;
+}
+
+body.home {
+    background-color: #000;
+}
+
+body.help {
+    background-color: #1b1b1b;
 }
 
 a {
@@ -22,7 +29,7 @@ a:focus {
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
-    padding: 80px;
+    padding: 60px 0px !important;
     margin-bottom: 0px;
 }
 
@@ -90,9 +97,46 @@ section.second {
     background-color: #2b2b2b;
 }
 
+section.first {
+    background-color: #1b1b1b;
+}
+
 footer {
     text-align: center;
     padding: 30px 0;
     font-size: 14px;
     background-color: #000;
+}
+
+@media screen and (max-width: 979px) {
+    body {
+        padding-top: 0px;
+    }
+
+    .hero-unit {
+        margin-top: -20px;
+        padding: 60px 20px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        padding-top: 0px;
+    }
+
+    .hero-unit h1 {
+       font-size: 60px;
+    }
+
+    .hero-unit {
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-top: -20px;
+    }
+
+    footer, section.home {
+        padding: 30px 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 }
